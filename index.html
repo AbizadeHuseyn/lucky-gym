@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="Lucky Gym — weekly workout and nutrition plan for Huseyn &amp; Röya. Push/pull split, full-body training, and macro targets." />
 <title>Lucky Gym – Huseyn &amp; Röya</title>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="/icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -57,12 +60,9 @@
     display: grid; place-items: center;
     flex-shrink: 0;
   }
-  .brand-initials {
-    font-family: 'Fraunces', serif;
-    font-weight: 800;
-    font-size: 16px;
-    color: var(--green-deep);
-    letter-spacing: -0.02em;
+  .brand-mark img {
+    width: 32px; height: 32px; display: block;
+    border-radius: 4px;
   }
   .brand-text { flex: 1; }
   .brand-name {
@@ -77,18 +77,6 @@
     text-transform: uppercase;
     color: var(--ink-dim);
     margin-top: 4px;
-  }
-  .week-pill {
-    background: var(--green-soft);
-    color: var(--green-deep);
-    padding: 6px 12px;
-    border-radius: 999px;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    white-space: nowrap;
   }
 
   /* Hero card */
@@ -462,13 +450,12 @@
   <!-- Brand bar with week pill -->
   <div class="brand">
     <div class="brand-mark">
-      <span class="brand-initials">LG</span>
+      <img src="icon-192.png" alt="Lucky Gym">
     </div>
     <div class="brand-text">
       <div class="brand-name">Lucky <em>Gym</em></div>
       <div class="brand-tagline">Huseyn &amp; Röya</div>
     </div>
-    <div class="week-pill">Week 1</div>
   </div>
 
   <!-- Hero -->
